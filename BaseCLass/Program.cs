@@ -25,11 +25,11 @@ namespace BaseCLass
             SizeY = sizeY;
         }
 
-        public int this[int indexX, int indexY]
+        public int this[int indexX, int indexY] // свойство
         {
             get
             {
-                return data[indexX, indexY];
+                return data[indexX, indexY]; 
             }
 
             set
