@@ -10,36 +10,46 @@ namespace MiniQuests1
 
             int[] a = new int[10] { 1, 4, 2, 9, 8, 0, 11, 20, 30, 25 };
 
-            foreach (var e in ChangeMin(a))
+            var lis = new list(a);
+            
+            foreach (var e in lis.ChangeMin())
             {
                 Console.Write($"{e} ");
             }
         }
+    }
 
-        static int[] ChangeMin(int[] mas)
+    class list
+    {
+        public int[] Mas { get; set; }
+
+        public list(int[] mas)
+        {
+            Mas = mas;
+        }
+
+        public int[] ChangeMin()
         {
             int minn = 99999999;
             int maxx = 0;
             int indexF = 0, indexS = 0;
 
-            for (int i = 0; i < mas.Length; i++)
+            for (int i = 0; i < Mas.Length; i++)
             {
-                if (mas[i] > maxx)
+                if (Mas[i] > maxx)
                 {
-                    maxx = mas[i];
+                    maxx = Mas[i];
                     indexF = i;
                 }
-                if (mas[i] < minn)
+                if (Mas[i] < minn)
                 {
-                    minn = mas[i];
+                    minn = Mas[i];
                     indexS = i;
                 }
             }
-            mas[indexF] = minn;
-            mas[indexS] = maxx;
-            return mas;
+            Mas[indexF] = minn;
+            Mas[indexS] = maxx;
+            return Mas;
         }
-
-
     }
 }

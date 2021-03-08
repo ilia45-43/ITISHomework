@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Indexs2", "Indexs2\Indexs2.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseCLass", "BaseCLass\BaseCLass.csproj", "{9280CECD-4477-4673-A795-60BF584A8427}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListQuestion", "MiniQuests1\ListQuestion.csproj", "{B9E06B87-5643-4CC9-965E-1505669FDF0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListQuestion", "ListQuestion\ListQuestion.csproj", "{B9E06B87-5643-4CC9-965E-1505669FDF0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
