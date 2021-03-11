@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Indexs
 {
@@ -48,6 +49,21 @@ namespace Indexs
             Console.Clear();
 
             train.PrintTrainData();
+
+            Console.WriteLine(train["Moscow"].Name);
+            train["Moscow"] = new Station()
+            {
+                Name = "Kazan",
+                TimeOfArrival = DateTime.Now,
+                TimeOfDeparture = DateTime.Now
+            };
+
+            Console.WriteLine();
+
+            foreach (var s in train.Stations)
+            {
+                Console.WriteLine(s.Name);
+            }
 
             Console.ReadKey();
         }
@@ -109,6 +125,21 @@ namespace Indexs
             Vagons = vagons;
             Stations = stations;
         }
+        // написать индексатор
+
+        public Station this[string stationName]
+        {
+            get
+            {
+                return Stations.FirstOrDefault(x => x.Name == stationName) ?? throw new Exception("Not Found");
+            }
+            set
+            {
+                var stationIndex = Stations.FindIndex(x => x.Name == stationName);
+                if (stationIndex < 0) throw new Exception("Not Found");
+                Stations[stationIndex] = value;
+            }
+        } 
 
         public void PrintTrainData()
         {

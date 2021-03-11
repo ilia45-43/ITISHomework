@@ -9,4 +9,9 @@ namespace GEneric
             Console.WriteLine("Hello World!");
         }
     }
+
+    class generic <T>
+    {
+
+    }
 }

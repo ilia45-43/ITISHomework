@@ -24,7 +24,7 @@ namespace BaseCLass
             SizeX = sizeX;
             SizeY = sizeY;
         }
-
+        // второй индексатор
         public int this[int indexX, int indexY] // свойство
         {
             get
@@ -37,5 +37,7 @@ namespace BaseCLass
                 data[indexX, indexY] = value;
             }
         }
+
+
     }
 }
