@@ -6,38 +6,67 @@ namespace BaseCLass
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var bas = new BaseClass(10,10);
+
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    bas[i, j] = i + j;
+                }
+            }
         }
     }
 
     class BaseClass
     {
-        private int[,] data;
+        private int[,] data { get; set; }
+        private int[] data1 { get; set; }
 
-        public int SizeX { get; set; }
-
-        public int SizeY { get; set; }
-
-        public BaseClass(int sizeX, int sizeY)
+        public BaseClass(int x, int y)
         {
-            data = new int[sizeX, sizeY];
-            SizeX = sizeX;
-            SizeY = sizeY;
+            data = new int[x, y];
         }
-        // второй индексатор
-        public int this[int indexX, int indexY] // свойство
+
+        public int[] this[int colIndex]
         {
             get
             {
-                return data[indexX, indexY]; 
-            }
+                if (colIndex > data.GetLength(1))
+                    throw new IndexOutOfRangeException("");
 
+                var array = new int[data.GetLength(1)];
+
+                for (int i = 0; i < data.GetLength(1); i++)
+                {
+                    array[i] = data[i, colIndex];
+                }
+
+                return array;
+            }
             set
             {
-                data[indexX, indexY] = value;
+                if (colIndex > data.GetLength(1))
+                    throw new IndexOutOfRangeException("");
+
+                for (int i = 0; i < value.Length; i++)
+                {
+                    data[i, colIndex] = value[i];
+                }
             }
+
         }
 
-
+        public int this[int x, int y]
+        {
+            get
+            {
+                return data[x, y];
+            }
+            set
+            {
+                data[x, y] = value;
+            }
+        }
     }
 }

@@ -10,13 +10,17 @@ namespace MiniQuests1
         {
             
             var a = new int[10] { 1, 4, 2, 9, 8, 1, 11, 20, 30, 25 };
-            var lis = new list<int>(a);
-            lis.Count = a.Length;
+            var lis = new list<int>();
+            //lis.Count = a.Length;
             var b = new int[11] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 
             var str = new string[5] { "faf", "asd", "fasd", "xvbxc", "sdgsv" };
 
-            lis.Sort();
+            //lis.RemoveAt(9);
+            lis.Add(1);
+            lis.Add(2);
+            lis.Add(3);
+            lis.RemoveAt(5);
 
             foreach (var e in lis.Mas)
                 Console.Write($"{e} ");
@@ -30,13 +34,18 @@ namespace MiniQuests1
     {
         public T[] Mas { get; set; }
         public int Count { get; set; }
+        private T[] m = new T[1];
+
 
         public list(T[] mas)
         {
             Mas = mas;
         }
 
-        public list(){ }
+        public list()
+        {
+            Mas = m;
+        }
 
         private string Adding(int max, int len)
         {
