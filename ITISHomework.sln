@@ -16,9 +16,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumbInterface", "NumbInterf
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumbGeneric", "NumbGeneric\NumbGeneric.csproj", "{5EC389EF-9DE4-4A91-969D-DB73DCB2497A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate", "Delegate\Delegate.csproj", "{967FFC93-DEF7-4BDB-BE60-3E137AE590ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate", "Delegate\Delegate.csproj", "{967FFC93-DEF7-4BDB-BE60-3E137AE590ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateAnonim", "DelegateAnonim\DelegateAnonim.csproj", "{3E3D9FA1-444A-4954-B24A-CC47DBAE0227}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateAnonim", "DelegateAnonim\DelegateAnonim.csproj", "{3E3D9FA1-444A-4954-B24A-CC47DBAE0227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListExcel", "ListExcel\ListExcel.csproj", "{5A700E22-B13E-4117-AD4E-9AAA3F750761}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +64,10 @@ Global
 		{3E3D9FA1-444A-4954-B24A-CC47DBAE0227}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E3D9FA1-444A-4954-B24A-CC47DBAE0227}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E3D9FA1-444A-4954-B24A-CC47DBAE0227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A700E22-B13E-4117-AD4E-9AAA3F750761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A700E22-B13E-4117-AD4E-9AAA3F750761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A700E22-B13E-4117-AD4E-9AAA3F750761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A700E22-B13E-4117-AD4E-9AAA3F750761}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
