@@ -7,13 +7,13 @@
 
 **14.03.2021**
 ***
- :black_square_button:new Delegate - Done (Not Checked); 
+ :white_check_mark:new Delegate - Done (Not Checked); 
 > Объявить тип делегата, который ссылается на метод:​ метод получает входным параметром переменную типа double;​метод возвращает значение типа double, которое есть результатом вычисления.​ Реализовать вызов методов с помощью делегата, которые получают радиус R и вычисляют:​ длину окружности по формуле D = 2 * π* R;​ площадь круга по формуле S = π* R²;​ объем шара. Формула V = 4/3 * π * R³.​ Методы должны быть объявлены как статические (с ключевым словом static).
 
- :black_square_button:new DelegateAnonim - Done (Not Checked); 
+ :white_check_mark:new DelegateAnonim - Done (Not Checked); 
 > Создать анонимный метод, который принимает в качестве аргумента массив делегатов и возвращает среднее арифметическое возвращаемых значений методов сообщенных с делегатами в массиве. Методы, сообщенные с делегатами из массива, возвращают случайное значение типа int.
 
-:black_square_button:new NumbGeneric - Done (Not Checked); 
+:white_check_mark:new NumbGeneric - Done (Not Checked); 
 > Реализовать:​ Обобщенный класс Number – натуральное число (как в прошлой задаче), сформировать его для работы с long и string (классы SimpleLongNumber и VeryLongNumber) ​
 
 Методы:​
@@ -22,7 +22,7 @@
 - Number sub(Number n) – вычитание из нашего числа числа n. Т.к. n – натуральное, то если n больше числа, то выкинуть исключение NotNaturalNumberException (реализуйте его самостоятельно как наследник от Exception)​
 - int compareTo(Number n) – сравнить число с n. Вернуть 1, если число больше n, -1, если меньше, 0, если равно
 
-:black_square_button:new NumbInterface - Done (Not Checked); 
+:white_check_mark:new NumbInterface - Done (Not Checked); 
 
 >Реализовать:​
 
@@ -38,11 +38,11 @@
 > SimpleLongNumber – класс, в котором число хранится в примитивном типе long.​
 > VeryLongNumber – класс, в котором число хранится как массив цифр или строка цифр.
 
-> :black_square_button:fix BaseCLass - Done (Not Checked); 
+> :white_check_mark:fix BaseCLass - Done (Not Checked); 
 ***
 
 **15.03.2021**
 ***
- :black_square_button:new ListExcel - Done (Not Checked);
+ :white_check_mark:new ListExcel - Done (Not Checked);
 - Для таблицы создать list в котором хранится информация о заказах (первые 150),Отсортировать по приоритетам, дате принятия заказа, даты прибытия заказа. Вывести имя даты заказа, что заказали, возможность удалить последний заказ.
 ***
