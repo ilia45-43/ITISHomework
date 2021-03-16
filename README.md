@@ -7,15 +7,15 @@
 
 **14.03.2021**
 ***
- :white_check_mark:new Delegate - Done; 
+:white_check_mark:new Delegate - Done; 
 
- :white_check_mark:new DelegateAnonim - Done; 
+:white_check_mark:new DelegateAnonim - Done; 
 
 :white_check_mark:new NumbGeneric - Done; 
 
 :white_check_mark:new NumbInterface - Done; 
 
-> :white_check_mark:fix BaseCLass - Done; 
+:white_check_mark:fix BaseCLass - Done; 
 ***
 
 # **15.03.2021**
@@ -32,4 +32,4 @@
 
 :black_square_button: - new Collections 
 > Отсортировать по Датам и Приоретету.
-
+***
