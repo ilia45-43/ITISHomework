@@ -9,10 +9,14 @@ namespace Delegate
         static void Main()
         {
             double r = 4;
-            Calc GC = Circle;
-            Calc GCA = CircleArea;
-            Calc GBV = BallVolume;
-            Console.WriteLine("D = " + GC(r) + "\n" + "S = " + GCA(r) + "\n" + "V = " + GBV(r));
+            Calc n = Circle;
+            n += CircleArea;
+            n += BallVolume;
+            //Calc GC = Circle;
+            //Calc GCA = CircleArea;
+            //Calc GBV = BallVolume;
+            //Console.WriteLine("D = " + GC(r) + "\n" + "S = " + GCA(r) + "\n" + "V = " + GBV(r));
+            Console.WriteLine(n(r));
 
         }
 

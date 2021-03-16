@@ -16,8 +16,8 @@ namespace ListExcel
             arraysList = Methods.Fix(arraysList);
 
             arraysList = Methods.PrioritySort(arraysList);
-            arraysList = Methods.OrderDateSort(arraysList);
-            arraysList = Methods.ShipDateSort(arraysList);
+            //arraysList = Methods.OrderDateSort(arraysList);
+            //arraysList = Methods.ShipDateSort(arraysList);
             arraysList = Methods.Remove(arraysList);
 
             Methods.PrintArray(arraysList);
@@ -66,20 +66,22 @@ namespace ListExcel
             {
                 Console.BufferWidth = 2000;
 
+                Console.WindowWidth = 200;
+                Console.WindowHeight = 60;
+
                 for (int i = 0; i < mas.Count; i++)
                 {
                     var el = mas[i];
 
                     Console.WriteLine(
-                        "{0,3} {1,10} {2,10} {3,15} {4,15}" +
-                        "{5,10} {6,10} {7,10} {8,15} {9,15}" +
-                        "{10,10} {11,10} {12,20} {13,30} {14,30}" +
-                        "{15,30} {16,30} {17,30} {18,100} {19,15} {20,10} {21,10}",
+                        "{0,3} | {1,5} | {2,6} | {3,11} | {4,15} |" +
+                        "{5,4} | {6,10}|  {7,4} | {8,15} | {9,10} |" +
+                        "{10,10} | {11,10} | {12,20} | {13,21} | {14,21} |" +
+                        "{15,16} | {16,16} | {17,30} | {18,96} | {19,12} | {20,5} | {21,10} |",
                         i, el[0], el[1], el[2], el[3], el[4],
                         el[5], el[6], el[7], el[8], el[9],
                         el[10], el[11], el[12], el[13], el[14],
                         el[15], el[16], el[17], el[18], el[19], el[20]);
-
                 }
             }
 
