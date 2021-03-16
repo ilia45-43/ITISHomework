@@ -28,8 +28,10 @@
 ***
 # **16.03.2021**
 ***
-:white_check_mark:fix Delegate - Done;
+:white_check_mark: fix Delegate - Added couple things;
 
-:black_square_button: - new Collections 
+:white_check_mark: fix ListExcel - Fixed printing;
+
+:black_square_button: new Collections - Done;
 > Отсортировать по Датам и Приоретету.
 ***
